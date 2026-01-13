@@ -24,9 +24,11 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
   min-height: 100vh;
 }
 
@@ -65,4 +67,45 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Custom utility classes for Stellar Solutions */
+.text-dark-blue {
+  color: #0f1021;
+}
+
+.bg-dark-blue {
+  background-color: #0f1021;
+}
+
+.text-primary {
+  color: #2563eb;
+}
+
+.bg-primary {
+  background-color: #2563eb;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
 }
